@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-13T02:36:23.890Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="nrekCpgIXx7a8uuInx_1" version="14.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-13T02:45:40.046Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="94Xm1d1dcqPuIf0yLz7c" version="14.3.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1673" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -42,6 +42,33 @@
         </mxCell>
         <mxCell id="AFaaSEN9ATu8mr7yJEgv-12" value="Agnostic database Communication" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="200" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-13" value="Cron/Task Scheduling API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="380" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-14" value="Cross Platform" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="550" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-15" value="Authentication" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-16" value="SEO Search Support" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-17" value="Analytics Support" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-18" value="File Processing and storage" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-19" value="Multidatabase/&lt;br&gt;subdomain support" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="380" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-20" value="Port Management" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="550" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AFaaSEN9ATu8mr7yJEgv-21" value="This might change as needed. I&#39;m 25 I don&#39;t know what I&#39;m doing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="360" width="190" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
