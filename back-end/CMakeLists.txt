@@ -1,3 +1,5 @@
+#TODO : put all the fetch content in it's own file.
+
 cmake_minimum_required(VERSION 3.16)
 project(goblin_cms)
 
@@ -34,24 +36,33 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(cli11)
 
 
+FetchContent_Declare(
+        dynalo
+        GIT_REPOSITORY https://github.com/maddouri/dynalo.git
+        GIT_TAG master
+)
+FetchContent_MakeAvailable(dynalo)
+
 list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/contrib)
 include(CTest)
 include(Catch)
-#add_subdirectory("csv-parser")
 
-add_executable(goblin_cms)
-target_link_libraries(docker_test PRIVATE Catch2::Catch2 croncpp::croncpp rapidcsv  CLI11)
+set(global_libs Catch2::Catch2 croncpp::croncpp rapidcsv dynalo CLI11)
 
+set(goblin_cms_src goblin_cms/main.cpp)
+set(goblin_tests_src goblin_tests/test_main.cpp)
 
+add_executable(goblin_cms ${goblin_cms_src})
+target_link_libraries(goblin_cms PRIVATE ${global_libs})
 
+add_library(share_object_test SHARED goblin_plugins/shared.hpp goblin_plugins/logger_main.cpp)
 
+target_link_libraries(share_object_test PRIVATE ${global_libs})
 
+add_executable(goblin_test ${goblin_tests_src})
+target_link_libraries(goblin_test PRIVATE ${global_libs})
 
-
-add_executable(goblin_cms_test_runner test2.cpp)
-target_link_libraries(goblin_cms_test_runner PRIVATE Catch2::Catch2 croncpp::croncpp rapidcsv  CLI11)
-
-catch_discover_tests(goblin_cms_test_runner)
+catch_discover_tests(goblin_test)
 
 
 
