@@ -33,6 +33,13 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(cli11)
 
+FetchContent_Declare(
+        restbed
+        GIT_REPOSITORY https://github.com/corvusoft/restbed
+        GIT_TAG        4.8)
+
+FetchContent_MakeAvailable(restbed)
+
 
 list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/contrib)
 include(CTest)
@@ -40,7 +47,7 @@ include(Catch)
 #add_subdirectory("csv-parser")
 
 add_executable(goblin_cms)
-target_link_libraries(docker_test PRIVATE Catch2::Catch2 croncpp::croncpp rapidcsv  CLI11)
+target_link_libraries(docker_test PRIVATE Catch2::Catch2 croncpp::croncpp rapidcsv  CLI11 restbed)
 
 
 
